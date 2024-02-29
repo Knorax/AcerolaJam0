@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcerolaJam0", "AcerolaJam0.csproj", "{3EE58D1E-144D-4FB0-9187-06C0DAA86299}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EE58D1E-144D-4FB0-9187-06C0DAA86299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE58D1E-144D-4FB0-9187-06C0DAA86299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE58D1E-144D-4FB0-9187-06C0DAA86299}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{3EE58D1E-144D-4FB0-9187-06C0DAA86299}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{3EE58D1E-144D-4FB0-9187-06C0DAA86299}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{3EE58D1E-144D-4FB0-9187-06C0DAA86299}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
