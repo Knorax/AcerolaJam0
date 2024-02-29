@@ -12,6 +12,13 @@ public partial class MainScene : Godot.Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		Debug.Print("Hello World!");
+		if(Input.IsActionPressed("up"))
+			Debug.Print("Up pressed!");
+		if(Input.IsActionPressed("down"))
+			Debug.Print("Down pressed!");
+		if(Input.IsActionPressed("right"))
+			Debug.Print("Right pressed!");
+		if(Input.IsActionPressed("left"))
+			Debug.Print("Left pressed!");
 	}
 }
