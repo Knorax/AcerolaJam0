@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c767swh118ak5" path="res://icon.svg" id="1_cvy4x"]
 [ext_resource type="Script" path="res://Scripts/Collider.cs" id="1_tlnne"]
-[ext_resource type="PackedScene" uid="uid://n41vo2pl631e" path="res://Scripts/MoveStraightNode.tscn" id="2_bpn0n"]
+[ext_resource type="PackedScene" uid="uid://n41vo2pl631e" path="res://Nodes/MoveStraightNode.tscn" id="2_bpn0n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xl2kx"]
 radius = 16.0
