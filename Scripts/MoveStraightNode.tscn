@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://n41vo2pl631e"]
+
+[ext_resource type="Script" path="res://Scripts/MoveStraight.cs" id="1_2pgwm"]
+
+[node name="MoveStraight" type="Node"]
+script = ExtResource("1_2pgwm")
+Speed = 200.0

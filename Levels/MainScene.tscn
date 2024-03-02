@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://mkuxr4ba45t6"]
+
+[ext_resource type="Script" path="res://MainScene.cs" id="1_7hvmk"]
+[ext_resource type="PackedScene" uid="uid://cthj32chsk776" path="res://Character/Player.tscn" id="2_0nmea"]
+[ext_resource type="Texture2D" uid="uid://c767swh118ak5" path="res://icon.svg" id="3_sa1dh"]
+[ext_resource type="PackedScene" uid="uid://dvaraphauxaiq" path="res://Enemy/Debris.tscn" id="4_hgp6u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e36nk"]
+size = Vector2(448, 48)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7hvmk")
+
+[node name="WallLeft" type="StaticBody2D" parent="."]
+position = Vector2(-168, 0)
+rotation = -1.57079
+scale = Vector2(0.640001, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="WallLeft"]
+scale = Vector2(3.5, 0.3125)
+texture = ExtResource("3_sa1dh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallLeft"]
+shape = SubResource("RectangleShape2D_e36nk")
+
+[node name="WallRight" type="StaticBody2D" parent="."]
+position = Vector2(168, 0)
+rotation = -1.57079
+scale = Vector2(0.640001, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="WallRight"]
+scale = Vector2(3.5, 0.3125)
+texture = ExtResource("3_sa1dh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallRight"]
+shape = SubResource("RectangleShape2D_e36nk")
+
+[node name="Player" parent="." instance=ExtResource("2_0nmea")]
+position = Vector2(0, -104)
+MaxVelocity = 250.0
+Acceleration = 5000.0
+Deceleration = 1000.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Debris" parent="." instance=ExtResource("4_hgp6u")]
+position = Vector2(-256, -96)
+metadata/Speed = 100.0
+
+[node name="Debris2" parent="." instance=ExtResource("4_hgp6u")]
+position = Vector2(176, 184)
+rotation = -2.09439
+metadata/Speed = 100.0
+
+[node name="Debris3" parent="." instance=ExtResource("4_hgp6u")]
+position = Vector2(0, 216)
+rotation = -1.57079
+metadata/Speed = 100.0

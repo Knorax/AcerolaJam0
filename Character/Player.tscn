@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cthj32chsk776"]
+
+[ext_resource type="Script" path="res://Character/Controller.cs" id="1_1a75k"]
+[ext_resource type="Texture2D" uid="uid://c6lywq1cl600e" path="res://Sprites/Idle1.png" id="2_7hk5c"]
+[ext_resource type="PackedScene" uid="uid://mc4fenosfv6f" path="res://Scripts/HealthNode.tscn" id="3_rtkkk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0ewl"]
+size = Vector2(32, 32)
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_1a75k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_a0ewl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -16)
+scale = Vector2(4, 4)
+texture = ExtResource("2_7hk5c")
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Health" parent="." instance=ExtResource("3_rtkkk")]
