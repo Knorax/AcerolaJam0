@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c3p5vl44houb0"]
+
+[node name="SpawnPoint" type="Node2D" groups=["SpawnPoints"]]
+metadata/SpawnPointID = 0
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(0, -1.36424e-12)
+rotation = -1.57079
+scale = Vector2(0.370698, 1.02128)
+points = PackedVector2Array(0, 0, 0, 16, -8, 8, 8, 8, 0, 16)
+width = 1.0
+default_color = Color(1, 0.282353, 0.909804, 1)

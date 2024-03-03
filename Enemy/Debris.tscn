@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dvaraphauxaiq"]
+[gd_scene load_steps=6 format=3 uid="uid://dvaraphauxaiq"]
 
 [ext_resource type="Texture2D" uid="uid://c767swh118ak5" path="res://icon.svg" id="1_cvy4x"]
+[ext_resource type="Script" path="res://Scripts/Debris.cs" id="1_poqml"]
 [ext_resource type="Script" path="res://Scripts/Collider.cs" id="1_tlnne"]
 [ext_resource type="PackedScene" uid="uid://n41vo2pl631e" path="res://Nodes/MoveStraightNode.tscn" id="2_bpn0n"]
 
@@ -8,6 +9,7 @@
 radius = 16.0
 
 [node name="Debris" type="Node2D"]
+script = ExtResource("1_poqml")
 metadata/Speed = 200.0
 
 [node name="Collider" type="Area2D" parent="."]
