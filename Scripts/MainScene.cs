@@ -17,6 +17,9 @@ public partial class MainScene : Godot.Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		SpawnPoints = GetTree().GetNodesInGroup("SpawnPoints");
+
+		/*
 		timer = new Timer();
 		timer.WaitTime = 1.0f;
 		timer.OneShot = false;
@@ -24,8 +27,7 @@ public partial class MainScene : Godot.Node2D
 
 		AddChild(timer);
 		timer.Connect("timeout", new Callable(this, "SpawnDebris"));
-		
-		SpawnPoints = GetTree().GetNodesInGroup("SpawnPoints");
+		*/
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

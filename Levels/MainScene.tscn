@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://denqvhsda3jce"]
+[gd_scene load_steps=8 format=3 uid="uid://denqvhsda3jce"]
 
 [ext_resource type="Script" path="res://Scripts/MainScene.cs" id="1_1nasv"]
 [ext_resource type="PackedScene" uid="uid://cthj32chsk776" path="res://Character/Player.tscn" id="2_0nmea"]
 [ext_resource type="Texture2D" uid="uid://c767swh118ak5" path="res://icon.svg" id="3_sa1dh"]
 [ext_resource type="PackedScene" uid="uid://dvaraphauxaiq" path="res://Enemy/Debris.tscn" id="4_hgp6u"]
 [ext_resource type="PackedScene" uid="uid://c3p5vl44houb0" path="res://Nodes/SpawnPoint.tscn" id="5_hnwff"]
+[ext_resource type="PackedScene" uid="uid://bmvksbc6o8f17" path="res://Enemy/Runner.tscn" id="6_4kibx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e36nk"]
 size = Vector2(448, 48)
@@ -38,7 +39,7 @@ texture = ExtResource("3_sa1dh")
 shape = SubResource("RectangleShape2D_e36nk")
 
 [node name="Player" parent="." instance=ExtResource("2_0nmea")]
-position = Vector2(0, -104)
+position = Vector2(64, 48)
 MaxVelocity = 250.0
 Acceleration = 5000.0
 Deceleration = 1000.0
@@ -104,3 +105,8 @@ metadata/SpawnPointID = 7
 position = Vector2(128, 184)
 rotation = -1.57079
 metadata/SpawnPointID = 8
+
+[node name="Runner" parent="." instance=ExtResource("6_4kibx")]
+position = Vector2(-104, 48)
+InitialSpeed = 25.0
+RunAcceleration = 100.0
